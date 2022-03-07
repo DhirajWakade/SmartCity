@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.allinone.smartocity">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+
+    <application
+            android:name="com.allinone.smartocity.MyApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/smart_city_logo"
+            android:label="@string/app_name"
+            android:requestLegacyExternalStorage="true"
+            android:roundIcon="@mipmap/smart_city_logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.login.LoginActivity"
+                android:label="@string/sign_in_with_otp"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.mobileno.MobileActivity"
+                android:label="@string/sign_in"></activity>
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.SelectLoginTypeActivity"
+                android:label="@string/sign_in"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.signup.SignUpActivity"
+                android:label="@string/sign_up"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.AddBusinessActivity"
+                android:label="Add Business"
+                android:windowSoftInputMode="adjustResize|stateHidden"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.EditBusinessDetailsActivity"
+                android:label="Edit Business"
+                android:windowSoftInputMode="adjustResize|stateHidden"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.addproduct.AddProductActivity"
+                android:label="Add Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.addproduct.UpdateClothesProductActivity"
+                android:label="Update Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.addproduct.UpdateKiranaProductActivity"
+                android:label="Add Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.CategoryListActivity"
+                android:label="Shop By Category"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.EditProductActivity"
+                android:label="Edit Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.AddProductWithSearchActivity"
+                android:label="Add Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.fragments.ViewPagerActivity"
+                android:label="Add Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.BusinessDetailsActivity"
+                android:label="@string/sign_up"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.BusinessListActivity"
+                android:label="Business Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.ProductListActivity"
+                android:label="Product Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.SearchProductListActivity"
+                android:label="Search Product"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.allinone.smartocity.Business.activity.OrderListActivity"
+                android:label="Order Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.Business.MainBusinessActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.MainCustomerActivity"
+                android:label="@string/app_name"
+                android:launchMode="singleTop"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.MainCustomerDashboardActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.WelcomeActivity"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.product.ItemDetailsActivity"
+                android:label="Product Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name=".notification.NotificationListActivity"
+                android:label="Notification"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.AddNewAddressActivity"
+                android:label="Add Address"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.PlaceOrderActivity"
+                android:label="Place Order"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.AddressListActivity"
+                android:label="Address Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.order.CustomerOrderHomeListActivity"
+                android:label="Order Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.allinone.smartocity.customer.options.CartListActivity"
+                android:label="@string/my_cart"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.BusinessCartListActivity"
+                android:label="Business Cart"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.order.CustomerOrderBusinessListActivity"
+                android:label="Order Business Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.allinone.smartocity.customer.order.CustomerOrderProductTrackDetailsActivity"
+                android:label="Order Product Details"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.SearchResultActivity"
+                android:label="Search Product"
+                android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- to identify this activity as "searchable.xml" -->
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.SEARCH"/>
+
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+
+             <meta-data
+                     android:name="android.app.searchable"
+                     android:resource="@xml/searchable"/>-->
+        </activity>
+
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.ProductListWithFIlterActivity"
+
+                android:label="Hair Care"
+                android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- to identify this activity as "searchable.xml" -->
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.SEARCH"/>
+
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+
+             <meta-data
+                     android:name="android.app.searchable"
+                     android:resource="@xml/searchable"/>-->
+        </activity>
+
+        <activity
+                android:name="com.allinone.smartocity.ui.activity.SplashActivity"
+                android:label="@string/app_name"
+                android:theme="@style/splashtheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.allinone.smartocity.customer.miscellaneous.EmptyActivity"></activity>
+
+        <activity
+                android:name="com.allinone.smartocity.customer.options.WishlistActivity"
+                android:label="@string/my_wishlist"></activity>
+
+
+        <!-- [START fcm_default_icon] -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/smartcity"/>
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent"/>
+        <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id"/>
+        <!-- [END fcm_default_channel] -->
+
+
+        <!-- [START firebase_service] -->
+        <service
+                android:name=".firebase.MyFirebaseMessagingService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+
+
+    </application>
+
+</manifest>

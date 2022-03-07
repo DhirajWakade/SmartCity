@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/screnn_background"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_above="@id/fab_next"
+            android:background="@color/screnn_background"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_business_details"
+                    card_view:cardUseCompatPadding="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/_10sdp"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_16sdp"
+                              android:text="@string/business_details"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_12sdp"
+                              android:visibility="gone"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:text="Please enter your details. "/>
+
+                    <RelativeLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:visibility="gone"
+                            android:layout_weight=".28"
+                            android:background="@drawable/edit_border"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/spiner_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:spinnerMode="dropdown"/>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                            android:id="@+id/edt_business_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/business_name"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_pancard_no"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/pancard_no"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+                    <EditText
+                            android:id="@+id/edt_pancard_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/name_as_per_pancard"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_gst_no"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="GST number"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_food_licence_no"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="Food Licence number"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_food_licence_expiry_date"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="date"
+                            android:background="@drawable/edit_border"
+                            android:hint="Licence Expiry Date"
+                            android:focusable="false"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:visibility="gone"
+
+                    android:id="@+id/card_address_details"
+                    card_view:cardUseCompatPadding="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/_10sdp"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_16sdp"
+                              android:text="@string/address_details"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_address_one"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/address1"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .,"
+
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_address_two"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/address2"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .,"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_country"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/country"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_state"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/state"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+                    <EditText
+                            android:id="@+id/edt_city"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/city"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+                    <EditText
+                            android:id="@+id/edt_pincode"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/pincode"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:maxLength="6"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/card_bank_details"
+
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    card_view:cardUseCompatPadding="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/_10sdp"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_16sdp"
+                              android:text="@string/bank_details"/>
+
+                    <TextView
+                            android:id="@+id/txt_otp_send_on" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/we_have_sent_6_digit_otp"/>
+
+                    <EditText
+                            android:id="@+id/edt_ifsc_code"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="text"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/ifsc_code"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:maxLength="15"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_account_no"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/account_no"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <EditText
+                            android:id="@+id/edt_confirm_account_no"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_border"
+                            android:hint="@string/confirm_account_no"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_12sdp"
+                              android:visibility="gone"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:text="Waiting for OTP...5 sec "/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/card_images"
+
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    card_view:cardUseCompatPadding="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/_10sdp"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_16sdp"
+                              android:text="Images"/>
+
+
+                    <TextView
+                            android:id="@+id/txt_check_or_passbook_proof_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Click on below image for cheque or passbook Proof:"/>
+
+
+                    <ImageView
+                            android:id="@+id/img_check_or_passbook_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@mipmap/place_holder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                    />
+
+
+                    <TextView
+                            android:id="@+id/txt_shop_proof_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Click on below image for shop Proof:"/>
+
+
+                    <ImageView
+                            android:id="@+id/img_shop_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@mipmap/place_holder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_food_licence_proof_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Click on below image for Food Licence Proof:"/>
+
+
+                    <ImageView
+                            android:id="@+id/img_Food_licence_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@mipmap/place_holder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_pancopy_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Click on below image for Pan Proof:"/>
+
+
+                    <ImageView
+                            android:id="@+id/img_pancopy_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@mipmap/place_holder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                    />
+
+                    <TextView
+                            android:id="@+id/txt_address_proof_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Click on below image for Address Proof:"/>
+
+
+                    <ImageView
+                            android:id="@+id/img_address_proof_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@mipmap/place_holder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                    />
+
+
+                    <Button
+                            android:id="@+id/btn_submit_business"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:text="@string/submit"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@drawable/btn_border"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/card_order_details"
+                    android:visibility="gone"
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardUseCompatPadding="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/_10sdp"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_16sdp"
+                              android:text="Order details"/>
+
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_10sdp"
+                              android:layout_marginTop="@dimen/_10sdp"
+                              android:text="Provide Free Delivery"/>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_food_delivery"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:background="@drawable/edit_border"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/spiner_delivery"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:entries="@array/array_delivery_yes_no"
+                                android:spinnerMode="dropdown"/>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                            android:id="@+id/txt_minimumorderamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:visibility="gone"
+                            android:text="Minimum order amount"/>
+
+                    <EditText
+                            android:id="@+id/edt_min_order"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_border"
+                            android:hint="In Rupees "
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:maxLength="15"
+                            android:visibility="gone"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_10sdp"
+                              android:layout_marginTop="@dimen/_10sdp"
+                              android:text="Delivery below MOA with Charges?"/>
+                    <RelativeLayout
+                            android:id="@+id/rl_deliverybelowmoacharges"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:background="@drawable/edit_border"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/spiner_deliverybelowmoacharges"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:entries="@array/array_delivery_yes_no"
+                                android:spinnerMode="dropdown"/>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                            android:id="@+id/edt_delivery_charges_per_km"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:background="@drawable/edit_border"
+                            android:hint="IF_YES_DELIVERY_CHARGES_PER_K.M"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:maxLength="15"
+                            android:paddingLeft="@dimen/_12sdp"/>
+
+
+                    <RelativeLayout
+                            android:id="@+id/rl_multiple_pincode"
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:background="@drawable/edit_border"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/spinner_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+
+                                android:spinnerMode="dropdown"/>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_10sdp"
+                              android:layout_marginTop="@dimen/_10sdp"
+                              android:text="Provide cash on Delivery"/>
+
+
+                    <RadioGroup
+                            android:id="@+id/radioGrp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                    >
+                        <RadioButton
+                                android:id="@+id/radioM"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="YES"
+                        />
+                        <RadioButton
+                                android:id="@+id/radioF"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:checked="false"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="NO"
+                        />
+                    </RadioGroup>
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/_12sdp"
+                              android:visibility="gone"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:text="Waiting for OTP...5 sec "/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" tools:ignore="VectorDrawableCompat"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentEnd="true"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+</RelativeLayout>

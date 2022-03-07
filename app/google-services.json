@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "86393533892",
+    "project_id": "smartocity",
+    "storage_bucket": "smartocity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86393533892:android:723444e2562e3a42f56091",
+        "android_client_info": {
+          "package_name": "com.allinone.smartocity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86393533892-6a2qtrs53rl91b5cga6g7uhnifb8f18j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.allinone.smartocity",
+            "certificate_hash": "5643754593d9be116331327e618a3689df6f3ccd"
+          }
+        },
+        {
+          "client_id": "86393533892-jbavqh67cr3kbcaho667kn2jm3jkvs6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.allinone.smartocity",
+            "certificate_hash": "ce4d5acbd38d1147ebc52273932251436e12a51a"
+          }
+        },
+        {
+          "client_id": "86393533892-gs1h9huibga245vovbssl664n3dlu14v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDazjTOGFRkzuFy02MXTNuYBhLoMZldSo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86393533892-gs1h9huibga245vovbssl664n3dlu14v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

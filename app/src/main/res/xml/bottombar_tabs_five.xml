@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+            id="@+id/tab_home"
+            icon="@drawable/ic_action_home"
+            title="Home"/>
+
+    <tab
+            id="@+id/tab_category"
+            icon="@drawable/ic_action_category"
+            title="Categories"/>
+    <!-- <tab
+         id="@+id/tab_search"
+         icon="@drawable/ic_search_black_24dp"
+         title="Search" />-->
+
+    <tab
+            id="@+id/tab_my_list"
+            icon="@drawable/ic_shopping_basket_black_24dp"
+            title="My Orders"/>
+    <tab
+        id="@+id/tab_advertise"
+        icon="@drawable/ic_shopping_cart_black_24dp"
+        title="Advertise" />
+
+    <!-- <tab
+             id="@+id/tab_service"
+             icon="@drawable/ic_sentiment_satisfied_black_24dp"
+             title="Services" />-->
+</tabs>

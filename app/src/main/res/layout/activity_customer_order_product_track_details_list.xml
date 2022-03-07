@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screnn_background"
+              android:orientation="vertical"
+              tools:context=".customer.order.CustomerOrderBusinessListActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_6sdp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                >
+
+
+                    <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Order  Details"
+                                android:textSize="@dimen/_14sdp"
+
+                        />
+
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:background="@color/light_gray"/>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Total amount paid"
+                                    android:textSize="@dimen/_10sdp"/>
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_total_amount_paid"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="22 Oct 2020 11:23 AM"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+
+                            <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Payment mode"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_payment_payment_mode"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Cash"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_6sdp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                >
+
+
+                    <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Address  Details"
+                                android:textSize="@dimen/_14sdp"
+
+                        />
+
+                        <ImageView
+                                android:id="@+id/img_arrow_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:src="@drawable/ic_arrow_drop_up_black_24dp"/>
+
+
+                        <ImageView
+                                android:id="@+id/img_arrow_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/ll_address_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" android:visibility="gone"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:background="@color/light_gray"/>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Address Line 1"
+                                    android:textSize="@dimen/_10sdp"/>
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_address_line1"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="22 Oct 2020 11:23 AM"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+
+                            <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Address Line 2"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_address_line2"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Address Line 2"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                        >
+
+                            <TextView
+
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="City"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Rs. 66"
+                                    android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                        >
+
+                            <TextView
+
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="State"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+
+                            <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_state"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Pending"
+                                    android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:background="@color/light_gray"
+                                android:visibility="gone"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Pincode"
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text=" : "
+                                    android:textSize="@dimen/_10sdp"
+
+                            />
+
+                            <TextView
+                                    android:id="@+id/txt_pincode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Pending"
+                                    android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_6sdp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                >
+
+
+                    <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight=".28"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Item  Details(4)"
+                                android:textSize="@dimen/_14sdp"
+
+                        />
+
+                        <ImageView
+                                android:id="@+id/img_item_details_arrow_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:src="@drawable/ic_arrow_drop_up_black_24dp"/>
+
+
+                        <ImageView
+                                android:id="@+id/img_item_details_arrow_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/ll_product_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" android:visibility="gone"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

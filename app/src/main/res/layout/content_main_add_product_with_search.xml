@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+                xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+
+                          android:layout_margin="@dimen/_10sdp"
+            >
+
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/_16sdp"
+                          android:visibility="gone"
+                          android:text="@string/add_product_details"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/_12sdp"
+                          android:visibility="gone"
+                          android:layout_marginTop="@dimen/_5sdp"
+                          android:text="Please enter your details. "/>
+
+
+                <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+
+                >
+                    <LinearLayout
+                            android:id="@+id/ll_screen_4"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                    >
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp">
+
+                            <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                            >
+
+
+                                <LinearLayout
+                                        android:layout_weight="0.6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:gravity="start|center"
+                                        android:orientation="vertical"
+                                >
+                                    <TextView
+                                            android:id="@+id/txt_product_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_14sdp"
+                                            android:text="Apple MacBooerra)"
+                                            android:textColor="#000000"
+                                    />
+
+
+                                    <TableRow
+                                            android:id="@+id/table_row"
+                                            android:visibility="gone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                        <TextView
+                                                android:id="@+id/txt_pancard_no"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Apple MacBooierra)"
+
+                                        />
+
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="@dimen/_5sdp"
+
+
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text=" | "
+
+                                                android:layout_marginStart="@dimen/_3sdp"/>
+
+                                        <TextView
+                                                android:id="@+id/txt_gst_no"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/_5sdp"
+
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Apple )"
+
+                                                android:layout_marginStart="@dimen/_3sdp"/>
+                                    </TableRow>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_marginBottom="@dimen/_3sdp"
+                                    android:background="@color/light_gray"/>
+
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center"
+                                    android:orientation="horizontal"
+                            >
+
+
+                                <LinearLayout
+                                        android:layout_weight="0.7"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                >
+
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                    >
+
+                                        <TextView
+                                                android:layout_width="@dimen/_100sdp"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Color "
+
+                                        />
+
+
+                                        <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:gravity="center"
+                                                android:layout_height="match_parent"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text=" : "
+
+                                        />
+
+                                        <TextView
+                                                android:id="@+id/txt_color"
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Apple )"
+
+                                        />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:orientation="horizontal"
+                                    >
+
+
+                                        <TextView
+                                                android:layout_width="@dimen/_100sdp"
+                                                android:layout_height="wrap_content"
+
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Size "
+
+                                        />
+
+
+                                        <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text=" : "
+
+                                        />
+
+                                        <TextView
+                                                android:id="@+id/txt_size"
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="start|center"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Apple )"
+
+                                        />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+
+                                    >
+
+                                        <TextView
+
+                                                android:layout_width="@dimen/_100sdp"
+                                                android:layout_height="wrap_content"
+
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Type"
+
+                                        />
+
+
+                                        <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+
+                                                android:gravity="center"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text=" : "
+
+                                        />
+
+                                        <TextView
+                                                android:id="@+id/txt_type"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/_5sdp"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Apple )"
+                                                android:layout_marginStart="@dimen/_3sdp"/>
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+
+                                    >
+
+                                        <TextView
+
+                                                android:layout_width="@dimen/_100sdp"
+                                                android:layout_height="wrap_content"
+
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="Brand"
+
+                                        />
+
+
+                                        <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+
+                                                android:gravity="center"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text=" : "
+
+                                        />
+
+                                        <TextView
+                                                android:id="@+id/txt_brand"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/_5sdp"
+                                                android:padding="@dimen/_2sdp"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:text="105"
+                                                android:layout_marginStart="@dimen/_3sdp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                        android:layout_weight="0.3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                >
+                                    <ImageView
+
+                                            android:id="@+id/image_produc"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:srcCompat="@mipmap/place_holder"
+                                    />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height=".5dp"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_marginBottom="@dimen/_3sdp"
+                                    android:background="@color/light_gray"/>
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+
+                            >
+
+                                <TextView
+
+                                        android:layout_width="@dimen/_100sdp"
+                                        android:layout_height="wrap_content"
+
+                                        android:padding="@dimen/_2sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="Description"
+
+                                />
+
+
+                                <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+
+                                        android:gravity="center"
+                                        android:padding="@dimen/_2sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text=" : "
+
+                                />
+
+                                <TextView
+                                        android:id="@+id/txt_description"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:padding="@dimen/_2sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text="105"
+                                        android:layout_marginStart="@dimen/_3sdp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_16sdp"
+                                  android:visibility="gone"
+                                  android:text="@string/address_details"/>
+
+
+                        <EditText
+                                android:id="@+id/edt_product_price"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:inputType="number"
+                                android:background="@drawable/edit_border"
+                                android:hint="Enter actual price"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_14sdp"
+
+                                android:paddingLeft="@dimen/_12sdp"/>
+
+                        <EditText
+                                android:id="@+id/edt_product_final_price"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:inputType="number"
+                                android:background="@drawable/edit_border"
+                                android:hint="Final Price"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_14sdp"
+                                android:paddingLeft="@dimen/_12sdp"/>
+                        <EditText
+                                android:id="@+id/edt_product_tax_rate"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:inputType="number"
+                                android:background="@drawable/edit_border"
+                                android:hint="Tax Rate"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_14sdp"
+                                android:paddingLeft="@dimen/_12sdp"/>
+
+                        <EditText
+                                android:id="@+id/edt_product_description"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:inputType="textMultiLine"
+                                android:visibility="gone"
+                                android:gravity="left|top"
+                                android:background="@drawable/edit_border"
+                                android:hint="Description"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:textSize="@dimen/_14sdp"
+
+                                android:paddingLeft="@dimen/_12sdp"/>
+
+
+                        <EditText
+                                android:id="@+id/edt_product_available_quantity"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:inputType="number"
+                                android:background="@drawable/edit_border"
+                                android:hint="Available Quantity"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_14sdp"
+
+                                android:paddingLeft="@dimen/_12sdp"/>
+
+                        <Button
+                                android:id="@+id/btn_submit_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:text="@string/submit"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:background="@drawable/btn_border"/>
+
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+>
+
+
+    <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:background="@color/colorPrimaryDark"
+        />
+
+
+        <LinearLayout
+
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_100sdp">
+            <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+
+            >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        android:gravity="center">
+                    <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:sliderAnimationDuration="600"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#FFF"
+                            app:sliderScrollTimeInSec="1"
+                            app:sliderStartAutoCycle="true"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp">
+        <Button
+                android:id="@+id/btn_business"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Business"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/btn_border"/>
+
+
+        <Button
+                android:id="@+id/btn_customer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Customer"
+                android:layout_below="@+id/btn_business"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/btn_border"/>
+    </RelativeLayout>
+</LinearLayout>

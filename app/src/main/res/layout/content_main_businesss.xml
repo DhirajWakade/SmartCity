@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main_business"
+        android:background="@color/screnn_background">
+
+    <LinearLayout
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_6sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+                <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"
+                        app:sliderStartAutoCycle="true"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_business"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_6sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                tools:ignore="NestedWeights">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_5sdp"
+            >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Deals with:"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:gravity="center">
+
+                    <LinearLayout
+                            android:id="@+id/ll_1"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="104dp"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundgreen"
+                                android:src="@drawable/ic_business"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Business"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray"/>
+
+                    <LinearLayout
+                            android:id="@+id/ll_2"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundyello"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_order_bag"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Order"
+                        />
+
+
+                    </LinearLayout>
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray"/>
+
+                    <LinearLayout
+                            android:id="@+id/ll_3"
+                            android:layout_weight="1"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundpurple"
+                                android:src="@drawable/ic_payment"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Payment"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center">
+                    <LinearLayout
+                            android:id="@+id/ll_4"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundgreen"
+                                android:src="@drawable/ic_product"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Product"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+
+                            android:background="@color/lightgray"/>
+
+                    <LinearLayout
+                            android:id="@+id/ll_5"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundyello"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_order_bag"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Document"
+                        />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/cerclebackgroundyello"
+                                android:padding="10dp"
+                                android:visibility="gone"
+                                android:src="@drawable/ic_order_bag"/>
+
+                        <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Order"
+                        />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        <!--
+        <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main_business">
+        <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true"/>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_weight="0.5">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_business"
+                        />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_business"
+                                android:text="Business"
+                                android:layout_gravity="bottom"
+                                android:textSize="@dimen/_15sdp"
+                                android:gravity="center|bottom"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_product"
+                        />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_product"
+                                android:text="Product"
+                                android:layout_gravity="bottom"
+                                android:textSize="@dimen/_15sdp"
+                                android:gravity="center|bottom"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_weight="0.5">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_order_bag"
+                                android:layout_centerInParent="true"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_order"
+                                android:text="Order"
+                                android:layout_gravity="bottom"
+                                android:textSize="@dimen/_15sdp"
+                                android:gravity="center|bottom"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_payment"
+                        />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rl_payment"
+                                android:text="Payment"
+                                android:layout_gravity="bottom"
+                                android:textSize="@dimen/_15sdp"
+                                android:gravity="center|bottom"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>-->

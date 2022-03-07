@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal">
+    <EditText
+
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="@dimen/_35sdp"
+            android:inputType="text"
+            android:background="@drawable/edit_border"
+            android:hint="Keyboard"
+            android:paddingStart="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+
+            android:paddingLeft="@dimen/_12sdp"/>
+
+    <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_clear_black_24dp"
+            android:onClick="onDeleteKeyword"/>
+    <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:background="#FFF"
+    />
+</LinearLayout>

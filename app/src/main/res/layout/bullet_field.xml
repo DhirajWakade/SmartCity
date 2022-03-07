@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+    <EditText
+            android:id="@+id/edt_bullet_point"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+
+            android:layout_height="@dimen/_35sdp"
+            android:inputType="number"
+            android:background="@drawable/edit_border"
+            android:hint="Bullet Point"
+            android:paddingStart="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+
+            android:paddingLeft="@dimen/_12sdp"/>
+
+    <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDeleteBulletPoint"/>
+
+    <Button
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onAddFieldKeyword"
+            android:background="#FFF"
+
+    />
+</LinearLayout>
